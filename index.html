@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js/processing.min.js"></script>
 
-    <title>Herry Krampus!</title>
+    <title>Merry Krampus</title>
    
     
 
@@ -15,7 +15,7 @@
   <body>
   <BODY BGCOLOR="#ff0033" BACKGROUND="img/lines.png">
     <div>
-      <h1>Krampus</h1>
+      <h1>Merry Krampus All!</h1>
    </div>
     <script type="text/processing">
 
@@ -30,7 +30,7 @@
          
          
         void setup() {
-          size(450, 470);
+          size(screen.width, 500);
           background(#ff0033);
           smooth();
         }
@@ -69,6 +69,11 @@
           fill(#ff0033);
           ellipse(xpupila, ypupila, 15, 15);
           ellipse(xpupila2, ypupila2, 15, 15);
+
+                    //tonge
+          //stroke(0);
+          fill(#9D2020);
+          ellipse(xtong,ytong,30,60);
            
            
           //ears
@@ -86,10 +91,7 @@
           fill(#ff0033);
           rect(width/2, height/2-180, 150,70);
 
-          //tonge
-          //stroke(0);
-          fill(#9D2020);
-          ellipse(xtong,ytong,30,60);
+
            
              
           // Interactive movement
